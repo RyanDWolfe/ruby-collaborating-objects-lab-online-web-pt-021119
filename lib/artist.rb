@@ -27,7 +27,7 @@ class Artist
 
 
   def self.create(name)
-    self.new(name).tap {|artist| artist.save}
+     name.tap {|artist| artist[2] == new_value}
   end
 
   def save
